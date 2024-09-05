@@ -1,6 +1,17 @@
 import React from 'react';
-import { Youtube, Twitter } from 'lucide-react';
 import logo from './assets/logo.png';
+
+const LinkedInIcon = () => (
+  <img width="24" height="24" src="https://img.icons8.com/fluency/48/linkedin.png" alt="linkedin" />
+);
+
+const YoutubeIcon = () => (
+  <img width="24" height="24" src="https://img.icons8.com/fluency/48/youtube-play.png" alt="youtube-play" />
+);
+
+const TwitterIcon = () => (
+  <img width="24" height="24" src="https://img.icons8.com/color/48/twitter--v1.png" alt="twitter--v1" />
+);
 
 const App = () => {
   return (
@@ -15,9 +26,13 @@ const App = () => {
             </h1>
             <div className="flex justify-center space-x-4 mt-8">
               <div className="flex items-center bg-black rounded-lg p-2 animate-fade-up opacity-0" style={{ animationDelay: "0.4s", animationFillMode: "forwards" }}>
-                <a href="https://youtube.com/@zak10x" target="_blank" rel="noopener noreferrer" className="text-red-500 mr-2"><Youtube size={24} /></a>
-                <a href="https://x.com/zak10x" target="_blank" rel="noopener noreferrer" className="text-blue-500 mr-2"><Twitter size={24} /></a>
+                <a href="https://youtube.com/@zak10x" target="_blank" rel="noopener noreferrer" className="text-red-500 mr-2"><YoutubeIcon /></a>
+                <a href="https://x.com/zak10x" target="_blank" rel="noopener noreferrer" className="text-blue-500 mr-2"><TwitterIcon /></a>
                 <span className="text-sm text-white">@zak10x</span>
+              </div>
+              <div className="flex items-center bg-black rounded-lg p-2 animate-fade-up opacity-0" style={{ animationDelay: "0.6s", animationFillMode: "forwards" }}>
+                <a href="https://www.linkedin.com/in/isaacporat" target="_blank" rel="noopener noreferrer" className="text-blue-700 mr-2"><LinkedInIcon /></a>
+                <span className="text-sm text-white">@isaacporat</span>
               </div>
             </div>
           </div>
